@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router';
 import MainPage from './page/main';
 import SummaryPage from './page/summary';
 import styled from 'styled-components';
+import LinkPage from './page/link';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -21,6 +22,7 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<MainPage/>} />
             <Route path="/summary" element={<SummaryPage/>} />
+            <Route path="/link" element={<LinkPage/>} />
           </Routes>
         </Wrapper>
       </div>
